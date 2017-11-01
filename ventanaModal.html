@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Holtwood One SC' >
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Schoolbell'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Yatra One'>
+    <link rel="stylesheet" href="css/style_Index.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        Inicio
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">
+                        <i class="fa fa-camera-retro" aria-hidden="true"></i>
+                        Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conferencias.html">
+                        <i class="fa fa-sticky-note-o" aria-hidden="true"></i>
+                        Conferencias</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        Investigación</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="carousel.html">
+                            <i class="fa fa-picture-o" aria-hidden="true"></i>
+                            Carousel</a>
+                        <a class="dropdown-item" href="ventanaModal.html">
+                            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                            Ventanas modales</a>
+                        <!--               <a class="dropdown-item" href="#">Something else here</a>
+                        -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+<div class="container">
+
+    <h1 class="display-1 text-center">Ventanas modales</h1>
+
+        <div class="row">
+            <div class="col">
+                <h1 display-4> ¿Que son? <br></h1>
+                <p class="text-justify">Las ventanas Modales en Bootstrap, son unas ventanas ocultas que contienen la información a mostrar
+                    cuando las hacemos visibles mediante un enlace o botón.</p>
+                <p class="text-justify">Se abren dentro del mismo entorno de la web, ya que su código está
+                    definido dentro de la misma web que lo contiene, y lo único que hacemos como usuarios, es que sea
+                    visible o invisible mediante enlaces o botones.</p>
+                <p class="text-justify">Las ventanas modales apoyan una serie de casos de uso, desde notificaciones para el usuario, hasta
+                    contenido completamente personalizado con subcomponentes, tamaños y mas.</p>
+                </div>
+            <div class="col">
+                <img src="img/modal-ex.png" class="img-fluid" alt="Responsive image">
+                <footer class="font-italic text-right">Ejemplo de una ventana modal</footer>
+            </div>
+    </div> <!-- end row-->
+    <br><br><br>
+
+    <div>
+        <h1 display-4 text-center>¿Cómo funciona?<br></h1>
+    </div>
+    <div class="card card-outline-primary mb-3 text-center">
+        <div class="card-block">
+            <blockquote class="card-blockquote">
+                <p>Las ventanas modales estan construidas con HTML, CSS y JavaScript, y se posicionan sobre todo el documento, eliminando el desplazamiento sobre el contenido del <code class="highlighter-rouge">&lt;body&gt;</code>.</p>
+            </blockquote>
+        </div>
+    </div>
+    <div class="card card-outline-secondary mb-3 text-center">
+        <div class="card-block">
+            <blockquote class="card-blockquote">
+                <p>Al hacer clic en el fondo, la ventana modal se cerrará de manera automatica.</p>
+            </blockquote>
+        </div>
+    </div>
+    <div class="card card-outline-success mb-3 text-center">
+        <div class="card-block">
+            <blockquote class="card-blockquote">
+                <p>Bootstrap solo admite una ventana modal a la vez, por to tanto, es probable que se tenga problemas cuando se anida una ventana modal dentro de otra. </p>
+            </blockquote>
+        </div>
+    </div>
+    <div class="card card-outline-info mb-3 text-center">
+        <div class="card-block">
+            <blockquote class="card-blockquote">
+                <p>Las ventanas modales utilizan <code class="highlighter-rouge">position: fixed</code>, lo cual a veces puede ser un poco particular por de su representacion debido a que hay algunas advertencias con el uso de modales en dispositivos móviles.</p>
+                <footer><cite title="Source Title">sin embargo, siempre que sea posible, se debe colocar la ventana modal en una posicion superior para evitar posibles interferencias con otros elementos.</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+    <div class="card card-outline-danger text-center">
+        <div class="card-block">
+            <blockquote class="card-blockquote">
+                <p>Por último, el atributo de autofocus HTML no tiene ningún efecto en modales. A continuación, se muestra cómo se puede lograr el mismo efecto con JavaScript personalizado. </p>
+            </blockquote>
+            <img src="img/autofocus-js.png" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="card text-center">
+        <div class="card-header">
+            Ejemplo en vivo!
+        </div>
+        <div class="card-block">
+            <h4 class="card-title">A continuacion se muestra un ejemplo de la implementacion de una ventana modal</h4>
+            <p class="card-text">Se deslizará hacia abajo y se desvanecerá desde la parte superior de la página.</p>
+
+            <!-- BOTON PARA ABRIR EL MODAL -->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal">
+                Click me!
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Wow!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Hiciste click y ahora estamos aqui!, ahora cierra la ventana modal haciendo click en el boton cerrar o tocando el fondo...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END MODAL -->
+
+        </div>
+    </div>
+
+
+</div>
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Regresar al inicio</a>
+        </p>
+
+        <p>| Gabriela Soto | Infraestructura web |</p>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+<script src="js/eljs.js"/>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+</body>
+</html>

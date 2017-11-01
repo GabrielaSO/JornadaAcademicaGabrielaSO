@@ -1,0 +1,61 @@
+.carousel-caption {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40%;
+    text-align:center;
+}
+
+
+
+.carousel-caption p{
+    font-family: Schoolbell;
+    font-style: inherit;
+    color: #5ce0c1;
+}
+
+.carousel-caption h1{
+    font-family: Holtwood One SC;
+    color: tomato;
+}
+
+.carousel-caption h2{
+    font-family: Yatra One;
+    color: #ffec1d;
+}
+
+.carousel-caption h3{
+    font-family: Schoolbell;
+    color:white;
+}
+
+.carousel-caption .display-3 {
+    font-family: Holtwood One SC;
+    color: gold;
+}
+
+.display-1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carousel-caption .display-4 {
+    font-family: Yatra One;
+    color: white;
+}
+
+.card-title .display-1{
+    margin-top: 50%;
+    color: white;
+}
+
+.row{
+    padding-top: 70px;
+}
+
+<!--  -->
+
+footer{
+    align-content: flex-end;
+}
