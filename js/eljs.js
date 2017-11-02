@@ -1,6 +1,6 @@
 $('.carousel').carousel({
-    interval: 1000,
-    pause: true,
-    wrap: false,
+    interval: 3000,
+    pause: false,
+    wrap: true,
     cycle: true,
 });

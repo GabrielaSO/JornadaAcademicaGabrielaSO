@@ -13,8 +13,6 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Schoolbell'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Yatra One'>
     <link rel="stylesheet" href="css/style_Index.css">
-
-
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -63,45 +61,156 @@
     <br>
     <br>
 <div class="container">
-
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid bg-white">
         <div class="container">
-            <h1 class="display-3">CAROUSEL</h1>
+            <h1 class="display-2">CARRUSELL</h1>
             <p class="lead">es una presentación de diapositivas para ciclar una serie de contenido, construido con
                 CSS 3D y un poco de JavaScript. Funciona con una serie de imágenes, texto o marcado personalizado.</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
+
+        <div class="card-deck">
+            <div class="card card-outline-primary">
                 <div class="card-body">
-                    <h4 class="card-title">Special title treatment</h4>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">En los navegadores donde se admite la API Visibilidad de página, el carrusel
+                        evitará deslizarse cuando la página web no sea visible para el usuario.</p>
+                    <footer><cite title="Source Title">(como cuando la pestaña del navegador está inactiva, la ventana
+                            del navegador está minimizada, etc.)</cite></footer>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card">
+
+            <div class="card card-outline-secondary">
                 <div class="card-body">
-                    <h4 class="card-title">Special title treatment</h4>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Ademas se debe tener en cuenta que los carruseles anidados no son compatibles,
+                        y que los carruseles generalmente no cumplen con los estándares de accesibilidad. </p>
+                </div>
+            </div>
+
+            <div class="card card-outline-secondary">
+                <div class="card-body">
+                    <p class="card-text">Los carruseles no ajustan automáticamente las dimensiones de la diapositiva.
+                        por lo tanto, puede ser necesario utilizar recursos adicionales o estilos personalizados para
+                        ajustar el tamaño del contenido</p>
                 </div>
             </div>
         </div>
     </div>
+    <br><br><br>
+    <h1 class="display-4">
+        Algunos ejemplos de codigo para carrusel:
+    </h1><br><br>
+    <div class="row">
+        <div class="col">
+            <div class="card card-outline-info">
+                <div class="card-header btn-outline-info" role="tab" id="headingOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Carrusel con solo Diapositivas
+                        </a>
+                    </h5>
+                </div>
 
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <img src="img/SlideCodigo.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-outline-warning">
+                <div class="card-header btn-outline-warning" role="tab" id="headingTwo">
+                    <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            carrusel con subtítulos
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <img src="img/SlideSubtitulos.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-sm-5 d-inline-block">
+        <h1 class="display-4">Opciones</h1>
+        <p h-75 d-inline-block>Las opciones se pueden pasar a través de atributos de datos o JavaScript. Para los atributos de datos,
+            agregue el nombre de la opción a <code class="highlighter-rouge">data-</code> como en
+            <code class="highlighter-rouge">data-interval=""</code>.</p>
 
+        <table class="table table-bordered table-striped table-responsive">
+            <thead>
+            <tr>
+                <th style="width: 100px">Nombre</th>
+                <th style="width: 50px">Tipo</th>
+                <th style="width: 50px">Valor por defecto</th>
+                <th>Descripción</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>interval</td>
+                <td>number</td>
+                <td>5000</td>
+                <td>La cantidad de tiempo que de tiempo que tardara en cambiar automáticamente un elemento. Si es falso, el carrusel no
+                    se activará automáticamente.</td>
+            </tr>
+            <tr>
+                <td>keyboard</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Si el carrusel debería reaccionar a eventos de teclado.</td>
+            </tr>
+            <tr>
+                <td>pause</td>
+                <td>string | null</td>
+                <td>"hover"</td>
+                <td>Si se establece en <code>"hover"</code>, pone en pausa el ciclo del carrusel cuando el cursor esta sobre el carrusel y reanuda el
+                    ciclo del carrusel cuando el cursor deja de estar sobre. Si se establece en <code>null</code>, al pasar el mouse sobre el carrusel no se detendrá.</td>
+            </tr>
+            <tr>
+                <td>ride</td>
+                <td>string</td>
+                <td>false</td>
+                <td>Reproduce automáticamente el carrusel después de que el usuario cicla manualmente el primer elemento.</td>
+            </tr>
+            <tr>
+                <td>wrap</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Si el carrusel debe ciclar continuamente o tiene largos periodos detenido.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
-<footer class="text-muted">
-    <div class="container">
-        <p class="float-right">
-            <a href="#">Regresar al inicio</a>
-        </p>
 
-        <p>| Gabriela Soto | Infraestructura web |</p>
+
+
+
+
+
+
+    <div class="carousel-item">
+        <img src="..." alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h2>First Slide Label</h2>
+            <h3>Second Slide Label</h3>
+            <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Curabitur ornare
+                ligula blandit molestie hendrerit. Quisque a lacus
+                sed mauris egestas lobortis at sit amet massa.</p>
+        </div>
+    </div>
+<footer class="footer bg-dark">
+    <div class="container">
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+        <span class="text-muted">Gabriela Itzamar Soto Orozco. </span>
+        <span class="text-muted">Infraestructura web. </span>
     </div>
 </footer>
 <!-- Optional JavaScript -->
